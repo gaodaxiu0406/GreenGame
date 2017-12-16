@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--在iPhone 手机上禁止了把数字转化为拨号链接-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- 网站开启对web app程序的支持，在web app应用下状态条（屏幕顶部条）的颜色，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+    <title>GreenGame-list</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/list.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/animation.css"/>-->
+	</head>
+	<body>
+		<header>
+			<span id="back">&lsaquo;</span>
+			<h2>红包明细&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+		</header>
+		<section>
+			<!--已提交申请-->
+			<ul id="submitted" class="submitted">已提交申请</ul>
+			
+			<!--未领取申请-->
+			<ul id="unreceived" class="unreceived">未领取</ul>
+			
+			<div class="redSend">
+						<span>发放中</span>
+						<span>稍后会有客服联系您！</span>
+						<button class="redSendOk">确认</button>
+			</div>
+			
+			<div id="bankCardlist" class="bankCard">
+							<i class="close">&times;</i>
+						<label for="name" class="left">姓名</label>
+						<input class="right" type="text" name="name" id="name" value="" />
+						<label for="mobile" class="left">手机号</label>
+						<input class="right" type="number" name="mobile" id="mobile" value="" />
+						<label for="idnumber" class="left">身份证号</label>
+						<input class="right" type="" name="idnumber" id="idnumber" value="" />
+						<label for="bank" class="left">银行卡号</label>
+						<input class="right" type="number" name="bank" id="bank" value=""/>
+						<div>
+							<button id="submit">提交</button>
+						</div>
+			</div>
+			
+			<div class="bankCardSend">
+				<span>发放中</span>
+				<span>稍后会有客服联系您！</span>
+				<button class="redSendOk">确认</button>
+			</div>
+			
+			
+		</section>
+		<footer>
+			<span class="remark">&nbsp;&nbsp;&nbsp;&nbsp;备注：满50元以上或满10天可申请工资发放!</span>
+			<div class="bottom">
+				<button id="button" class="button right">申请工资发放</button>
+				<div class="bottom-list">
+					<span id="redSend">红包发放</span>
+					
+					
+					<span id="bankCard">银行卡发放</span>
+					
+					
+						
+						</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/list.js"></script>

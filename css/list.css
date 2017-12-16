@@ -1,0 +1,209 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 36%;
+	color: #FFF;
+	background: #d31926;
+}
+header h2{
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .4rem;
+	margin-left: -.5rem;
+}
+header span{
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	margin-left: .5rem;
+	font-size: .5rem;
+	font-weight: bold;
+}
+section{
+	position: absolute;
+	top: 1.1rem;
+	left: 3.5%;
+	width: 88%;
+	background: #f9f9f9;
+	border-radius: .05rem;
+	padding: 1% 2.5% 2.2rem 2.5%;
+}
+.unreceived li,.submitted li,.unsubmit li{
+	display: block;
+	width: 100%;
+	height: 1rem;
+	vertical-align: middle;
+	border-bottom: .01rem solid #929292;
+	/*-webkit-border-bottom: .01rem solid #929292;*/
+}
+.submitted li:nth-child(odd),.unreceived li:nth-child(odd),.unsubmit li:nth-child(odd){background:#f1f4f6;}
+.submitted li:nth-child(even),.unreceived li:nth-child(even),.unsubmit li:nth-child(even){background:#f9f9f9;}
+.left{
+	float: left;
+	width: 45%;
+}
+.right{
+	float: right;
+	width: 30%;
+}
+.submitted,.unreceived,.unsubmit{
+	font-size: .4rem;
+	line-height: 1rem;
+	color: #666;
+	font-weight: bold;
+}
+.submitted li .left h3,.unreceived li .left h3,.unsubmit li .left h3{
+	display: block;
+	font-size: .3rem;
+	line-height: .5rem;
+}
+.submitted li .left .time,.unreceived li .left .time,.unsubmit li .left .time{
+	display: block;
+	font-size: .24rem;
+	line-height: .5rem;
+}
+.submitted li .right .money,.unreceived li .right .money,.unsubmit li .right .money{
+	display: block;
+	font-size: .3rem;
+	line-height: .5rem;
+	text-align: center;
+	color: red;
+}
+.submitted li .right .success,.unreceived li .right .success,.unsubmit li .right .success{
+	display: block;
+	font-size: .24rem;
+	line-height: .5rem;
+	text-align: center;
+}
+.submitted li .all,.unreceived li .all,.unsubmit li .all{
+	color: red;
+}
+footer{
+	background: #fff;
+}
+footer .remark{
+	position: fixed;
+	left: 0;
+	bottom: 1rem;
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	background: #fff;
+	color: #ff0000;
+	font-size: .3rem;
+	font-weight: bold;
+	
+}
+footer .bottom{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 1rem;
+	background: #fff;
+}
+footer .bottom .button{
+	display: block;
+	width: 3.6rem;
+	height: 1rem;
+	background: #ff3232;
+	color: #fff;
+	font-size: .5rem;
+	list-style-type:none;
+	border: none;
+	z-index: -1;
+}
+footer .bottom .bottom-list{
+	display: none;
+	position: absolute;
+	bottom: 1rem;
+	right: 0.06rem;
+	width: 3.5rem;
+}
+footer .bottom .bottom-list span{
+	display: block;
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: .32rem;
+	background: #fff;
+	border:.02rem solid #e2757d;
+}
+section .bankCard{
+	display: none;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 5rem;
+	background: #fff;
+	padding: 0.3rem .2rem .3rem .2rem;
+	border: .01rem solid #d31926;
+}
+section .bankCard .close{
+	position: absolute;
+	top: 0.06rem;
+	right: 0.09rem;
+	font-size: .4rem;
+	font-style: normal;
+}
+section .bankCard label{
+	width: 37%;
+	margin-top: .34rem;
+}
+section .bankCard input{
+	width: 60%;
+	margin-top: .34rem;
+}
+section .bankCard div{
+	display: inline-block;
+	margin-top: .3rem;
+	width: 100%;
+}
+section .bankCard button{
+	display: block;
+	width: 2rem;
+	height: .8rem;
+	margin: auto;
+	background: #ff524a;
+	color: #fff;
+}
+section .redSend,section .bankCardSend{
+	display: none;
+	position: absolute;
+	top: 1.2rem;
+	left: 20%;
+	background: #fff;
+	width: 60%;
+	height: 3rem;
+	border: .01rem solid #d41a25;
+}
+section .redSend span,section .bankCardSend span{
+	display: block;
+	width: 100%;
+	border: none;
+	text-align: center;
+	color: #f5232e;
+	font-size: .3rem;
+	height: .8rem;
+	line-height: .8rem;
+}
+section .redSend button,section .bankCardSend button{
+	display: block;
+	width: 2rem;
+	height: .8rem;
+	background: #ff524b;
+	border: none;
+	margin: .2rem auto;
+}
+
+.selected{
+	background: #ca1e21;
+}

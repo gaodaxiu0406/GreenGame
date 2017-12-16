@@ -1,0 +1,116 @@
+@keyframes Down {
+  40% {
+    transform: translate3d(0, 40%, 0);
+    -webkit-transform: translate3d(0, 40%, 0);
+  }
+  50%{
+    transform: translate3d(0, 50%, 0);
+    -webkit-transform:translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+@-moz-keyframes Down {
+  40% {
+    transform: translate3d(0, 40%, 0);
+    -webkit-transform: translate3d(0, 40%, 0);
+  }
+  50%{
+    transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+@-webkit-keyframes Down {
+  40% {
+    transform: translate3d(0, 40%, 0);
+    -webkit-transform: translate3d(0, 40%, 0);
+  }
+  50%{
+    transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+@-o-keyframes Down {
+  40% {
+    transform: translate3d(0, 40%, 0);
+    -webkit-transform: translate3d(0, 40%, 0);
+  }
+  50%{
+    transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+
+
+@keyframes redDown {
+  100% {
+    transform: translate3d(-550%, 1000%, 0);
+    -webkit-transform: translate3d(-550%, 1000%, 0);
+  }
+}
+
+@-moz-keyframes redDown {
+  100% {
+    transform: translate3d(-550%, 1000%, 0);
+    -webkit-transform: translate3d(-550%, 1000%, 0);
+  }
+}
+@-webkit-keyframes redDown {
+  100% {
+    transform: translate3d(-550%, 1000%, 0);
+    -webkit-transform: translate3d(-550%, 1000%, 0);
+  }
+}
+@-o-keyframes redDown {
+  100% {
+    transform: translate3d(-550%, 1000%, 0);
+    -webkit-transform: translate3d(-550%, 1000%, 0);
+  }
+}
+
+@keyframes open{
+	0%{
+		top: 2.91rem;
+	}
+	100%{
+		top:2.2rem;
+	}
+}
+@-moz-keyframes open{
+	0%{
+		top: 2.91rem;
+	}
+	100%{
+		top:2.2rem;
+	}
+}
+@-webkit-keyframes open{
+	0%{
+		top: 2.91rem;
+	}
+	100%{
+		top:2.2rem;
+	}
+}
+@-o-keyframes open{
+	0%{
+		top: 2.91rem;
+	}
+	100%{
+		top:2.2rem;
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--在iPhone 手机上禁止了把数字转化为拨号链接-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- 网站开启对web app程序的支持，在web app应用下状态条（屏幕顶部条）的颜色，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+    <title>GreenGame</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+    <!--<script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+    </script>-->
+</head>
+<body>
+	<!--游戏主页-->
+	<div class="background">
+		<!--红包-->
+		<div class="gold"></div>
+		<ul></ul>
+		<!--抽奖红包-->
+		<div class="mo">
+			<div class="sen">
+				<img class="bg1" src="img/openbg1.png" alt="" />
+				<img class="bg2" src="img/openbg2.png" alt="" />
+				<div class="redOpen">
+					<img class="open" src="img/open.png"/>
+					<span id="money" class="money">sorry</span>
+				</div>
+			</div>
+		</div>
+		<!--箱子-->
+		<div class="backpack"></div>
+		<!--泡泡-->
+		<div class="purple"></div>
+		
+		<!--页面底部切换按钮-->
+		<nav class="tab">
+			<div class="green" id="green">
+				<i class="icon icon-green"></i>
+				<span>推动绿色</span>			
+			</div>		
+			<div id="green-list" class="green-list">
+				<div id="description" class="description">
+					<i>关注服务号</i>
+					<i>了解游戏规则</i>
+				</div>
+				<span id="num10" class="num">充值10次/壹百元</span>
+				<span id="num30" class="num">充值30次/叁百元</span>
+				<span id="num50" class="num">充值50次/伍佰元</span>
+				<span id="num110" class="num">充值110次/壹千元</span>
+			</div>
+			<div id="num-alert" class="num-alert">
+				<div class="top"></div>
+				<span class="text1">已提交申请</span>
+				<span class="text2">稍后会有客服联系您！</span>
+				<div id="sure" class="sure">确认</div>
+			</div>
+			<div class="num">
+				<i id="number" class="icon-num">请充值</i>
+				<span>次数</span>
+			</div>
+			<div id="list" class="list">
+				<i class="icon icon-list"></i>
+				<span>工资明细</span>
+			</div>
+		</nav>
+	</div>
+	
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>

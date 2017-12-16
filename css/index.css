@@ -1,0 +1,300 @@
+html,body {
+	font-size: 100px;
+	width: 100%;
+	height: 100%;
+	-webkit-user-select: none;
+	position: relative;
+	z-index: -3;
+	overflow: hidden;
+}
+/*游戏主页*/
+.tab div i.icon,.GameDescription .top .icon,.GameDescription .top .people,.GameDescription .bottom .icon-bottom{
+	background-image: url(../img/icon.png);
+	background-repeat: no-repeat;
+	background-size: 7.2rem 12.8rem;	
+}
+.background{
+	/*display: none;*/
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/home.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.background .backpack,.background .purple{
+	position: absolute;
+	background-image: url(../img/icon-home.png);
+	background-repeat: no-repeat;
+	background-size: 7.5rem 6.08rem;
+}
+.background .backpack{
+	left: .28rem;
+	bottom: 1.1rem;
+	width: 5.75rem;
+	height: 3.46rem;
+	background-position: -0rem -0.09rem;
+	
+}
+.background .purple{
+	right: .4rem;
+	bottom: 1.02rem;
+	width: 3.35rem;
+	height: 1.53rem;
+	background-position: -0.2rem -4.2rem;
+}
+/*红包*/
+.background .gold{
+	background-image: url(../img/gold.png);
+	background-size: 7.5rem 7.77rem;
+	width: 100%;
+	height: 60%;
+	z-index: 0;
+	animation: Down 2s infinite linear;
+	-webkit-animation: Down 2s infinite linear;
+}
+.background ul{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.background ul li{
+	display: block;
+	position: absolute;
+	/*top: -50px;
+	right: -50px;*/
+	z-index: 666;
+	animation: redDown 5s infinite linear;
+	-webkit-animation: redDown 5s infinite linear;
+}
+.redDown{
+	animation: redDown 3s infinite linear;
+	-webkit-animation: redDown 3s infinite linear;
+}
+
+
+/*底部导航*/
+.tab{
+	position: fixed;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 0.02rem;
+	background-color: #c9d8e7;
+	font-size: .3rem;
+}
+
+.tab .green,.tab .num,.tab .list{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	align-items: center;
+	/*height: 100%;*/
+	/*padding-bottom: .03rem;*/
+	color: #195623;
+	font-family: "微软雅黑";	
+}
+.tab div i.icon{
+	display: flex;
+	width: .4rem;
+	height: .4rem;
+	margin: .07rem auto .07rem auto;
+}
+.tab .green i.icon-green{
+	background-position: -.064rem -.064rem;	
+}
+/*点击推动绿色效果*/
+.tab .green-list{
+	display: none;
+	position: absolute;
+	bottom: .95rem;
+	left: 0;
+	width: 33%;
+	background: #c9d8e7;
+	border: 1px solid #979797;	
+}
+.tab .num-alert{
+	display: none;
+	position: absolute;
+	bottom: 3.6rem;
+	left: calc(50% - 2.4rem);
+	width: 4.6rem;
+	height: 3.4rem;
+	background: #fff;
+	border-radius: .05rem;
+}
+.tab .num-alert .top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: .8rem;
+	background: #ff534c;
+	border-radius: .05rem .05rem 0 0;
+}
+.tab .num-alert span,.tab .num-alert .sure{
+	display: block;
+	font-size: .36rem;
+	color: #333;
+	text-align: center;
+}
+.tab .num-alert span.text1{
+	margin-top: 1rem;
+}
+.tab .num-alert span.text2{
+	margin-top: .2rem;
+}
+.tab .num-alert .sure{
+	width: 1.6rem;
+	height: .8rem;
+	line-height: .8rem;
+	background: #ff524a;
+	border-radius: .05rem;
+	margin: .2rem auto;
+}
+.tab .green-list span{
+	display: block;
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+	border-bottom: 1px solid #979797;
+	color: #ca0202;
+}
+.tab .green-list .description{
+	display: block;
+	border: none;
+	border-bottom: 1px solid #979797;
+	height: 1.4rem;
+	background: #0db7f4;
+	text-align: center;
+}
+.tab .green-list .description i{
+	display: block;
+	width: 100%;
+	font-style: normal;
+	border: none;
+	height: .7rem;
+	line-height: .7rem;
+	color: #fff;
+}
+
+.tab .num i.icon-num{
+	display: flex;
+	margin: .15rem auto 0 auto;
+	line-height: .36rem;
+	text-align: center;
+	vertical-align: top;
+	font-size: 0.44rem;
+	font-style: normal;
+	color: #2dd1ac;
+}
+
+
+.tab .list i.icon-list{
+	background-position: .02rem -.67rem;
+}
+.tab .green span,.tab .num span,.tab .list span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+.active{
+	background: #ca1e21;
+	color: #fff;
+}
+
+/*红包*/
+.mo {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .2);
+	z-index: 100;
+	display: none;
+	font-size: .5rem;
+}
+.mo .sen {
+	position: absolute;
+	width: 100%;
+	border-radius: 5px;
+	top: 3rem;
+	left: 0;
+	margin: auto;
+}
+.mo .sen img.bg1 {
+	position: absolute;
+	width: 6.38rem;
+	height: 6.42rem;
+	top: 0;
+	left: calc(50% - 3.19rem);
+	z-index: 1;
+}
+.mo .sen img.bg2 {
+	position: absolute;
+	width: 3.04rem;
+	height: 2.05rem;
+	top: 1.89rem;
+	left: calc(50% - 1.54rem);
+	z-index: 0;
+}
+.mo .sen .redOpen{
+	position: absolute;
+	top: 2.2rem;/*2.91rem*/
+	left: calc(50% - 1.2rem);
+	width: 2.33rem;
+	height: 1.85rem;
+	animation: open 1s linear;
+	-webkit-animation: open 1s linear;
+}
+.mo .sen img.open {
+	position: absolute;
+	width: 2.33rem;
+	height: 1.85rem;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.mo .sen span.money{
+	width: 50%;
+	height: 30px;
+	position: absolute;
+	top: -.1rem;
+	left: 0.56rem;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	color: #e93525;
+	font-size: 140%;
+	font-weight: bold;
+}			
+.mo .sen a {
+	width: 26%;
+	height: 50px;
+	background-color: rgb(174, 222, 244);
+	box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+.selected{
+	background: #ca1e21;
+}
+
+
